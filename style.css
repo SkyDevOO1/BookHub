@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto:wght@400;500;700&display=swap");
+
+@import url("./source/style/navbar.css");
+@import url("./source/style/cards.css");
+@import url("./source/style/register.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  --DefaultColor: #f5f5f5;
+  --SecondaryColor: #8ecae6;
+  --SecondaryColor2: #d2d5d6;
+  --SkyBlue: #219ebc;
+  --DarkBlue: #023047;
+  --Yellow: #ffb703;
+  --Orange: #fb8500;
+  --White: #fff;
+  --Black: #000;
+  --FontSizeMin: 1.2rem;
+  --FontSizeMax: 1.5rem;
+  --FontFamily: "Croissant One";
+  --HeightVH: 100vh;
+  --WidthVW: 100vw;
+  --BorderRadius: 0.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--SecondaryColor2);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: var(--DarkBlue);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--SecondaryColor2);
+  height: var(--HeightVH);
+  width: var(--WidthVW);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

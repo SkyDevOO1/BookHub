@@ -1,0 +1,140 @@
+.produits {
+  padding: 3rem 5rem;
+  width: 100%;
+}
+
+.produits .search-product {
+  display: none;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.produits .search-product form {
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: var(--BorderRadius);
+  width: 50%;
+  background: var(--DefaultColor);
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.produits .search-product form input{
+  width: 90%;
+  padding: .3rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: var(--FontSizeMin);
+}
+
+.produits .search-product form i{
+  position: absolute;
+  right: .8rem;
+  font-size: var(--FontSizeMin);
+}
+
+.produits .filter {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.produits .filter li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: var(--BorderRadius);
+  transition: background 0.4s ease-out;
+}
+
+.produits .filter li:hover {
+  background: var(--SecondaryColor);
+}
+
+.produits .filter li i {
+  font-size: var(--FontSizeMax);
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  width: 16rem;
+  background: var(--White);
+  border-radius: var(--BorderRadius);
+  position: relative;
+}
+
+.cards .card i {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.5rem;
+  cursor: pointer;
+  font-size: var(--FontSizeMin);
+  padding: 0.3rem;
+  color: var(--White);
+  background: var(--SkyBlue);
+  border-radius: var(--BorderRadius);
+}
+
+.cards .card .card-img {
+  height: 83%;
+  width: 100%;
+}
+
+.cards .card .card-img img {
+  padding-top: 0.4rem;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 0.4rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.cards .card .card-footer {
+  padding: 0 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.cards .card .card-footer span.categorie {
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--BorderRadius);
+  background: var(--SkyBlue);
+  color: var(--White);
+}
+
+.cards .card .card-footer h4.title {
+  margin-top: 0.3rem;
+}
+
+
+@media (max-width: 566px){
+  .produits .search-product form{
+    width: 85%;
+  }
+}
+@media (max-width: 445px){
+  .produits .search-product{
+    display: flex;
+  }
+  .produits .search-product form{
+    width: 100%;
+  }
+}

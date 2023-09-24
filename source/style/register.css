@@ -1,0 +1,121 @@
+/* body#register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+} */
+
+.modal {
+  position: absolute;
+  top: 0;
+  background: #e78080;
+  color: #f5f5f5;
+  width: 30rem;
+  display: none;
+  padding: 2rem 1rem;
+  border-radius: var(--BorderRadius);
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal .modal-content p.err {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f5f5f5;
+  border-radius: var(--BorderRadius);
+  margin-top: 3rem;
+}
+
+.container form {
+  width: 30rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container form h1 {
+  text-align: center;
+}
+
+.container form .group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.group label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.group input {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border: none;
+  outline: none;
+  border-radius: var(--BorderRadius);
+  font-size: 1.2rem;
+}
+
+.group .mdp {
+  position: relative;
+}
+
+.group .mdp i {
+  position: absolute;
+  top: 10px;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--BorderRadius);
+}
+
+.btn-submit {
+  background: #91ee91;
+  margin-top: 1rem;
+  transition: color, background 500ms ease;
+}
+
+.btn-submit:hover {
+  background: #42eb42;
+}
+
+.btn-submit:active {
+  color: #f5f5f5;
+  background: green;
+}
+
+@media (max-width: 500px) {
+  .container form {
+    width: 25rem;
+  }
+  .modal {
+    width: 25rem;
+  }
+}
+@media (max-width: 412px) {
+  .container form {
+    width: 20rem;
+  }
+  .modal {
+    width: 20rem;
+    margin-bottom: 1rem;
+  }
+}

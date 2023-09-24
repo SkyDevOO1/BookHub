@@ -1,0 +1,134 @@
+header {
+  height: 10vh;
+  width: 100%;
+  background: #e5e5e5;
+  display: flex;
+  color: var(--Black);
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand h3 {
+  font-family: var(--FontFamily);
+  letter-spacing: 0.1rem;
+  font-size: var(--FontSizeMax);
+}
+
+ul {
+  list-style: none;
+}
+
+ul.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+ul.search form {
+  padding: 0.5rem;
+  width: 20rem;
+  border-radius: var(--BorderRadius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 0.4rem;
+  background: var(--DefaultColor);
+}
+
+ul.search form input {
+  border: none;
+  width: 100%;
+  outline: none;
+  background: transparent;
+  padding: 0.2rem;
+  letter-spacing: 0.1rem;
+  color: var(--Black);
+}
+
+ul.search form i {
+  position: absolute;
+  top: O;
+  right: 0.2rem;
+  color: var(--White);
+  font-size: var(--FontSizeMin);
+  padding: 0.4rem;
+  cursor: pointer;
+  border-radius: var(--BorderRadius);
+  background: var(--DarkBlue);
+}
+
+ul.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+ul.user li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.user li i {
+  cursor: pointer;
+  border-radius: var(--BorderRadius);
+  padding: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+ul.user li i:hover {
+  background: var(--SecondaryColor);
+}
+
+ul.user li img {
+  height: 2.6rem;
+  width: 2.6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hamberger li i {
+  font-size: var(--FontSizeMax);
+  padding: 0.6rem;
+  border-radius: var(--BorderRadius);
+  cursor: pointer;
+  transition: background 0.3s ease-out;
+}
+
+.hamberger li i:hover {
+  background: var(--SecondaryColor);
+}
+.none {
+  display: none;
+}
+
+@media (max-width: 830px) {
+  ul.center ul.links {
+    display: none;
+  }
+
+  .none {
+    display: block;
+  }
+}
+
+@media (max-width: 692px) {
+  ul.search form {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 553px) {
+  ul.user {
+    display: none;
+  }
+}
+@media (max-width: 445px) {
+  ul.search {
+    display: none;
+  }
+}
